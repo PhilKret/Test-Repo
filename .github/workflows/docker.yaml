@@ -28,15 +28,15 @@ jobs:
     - run: |
        python -VV
        pip install -r requirements.txt
-       python test.py
+       python oelpreise.py
     # Available enviroment variables
    #   environment: |
     #     LC_ALL: de_DE.UTF-8
     #     LC_TIME: de_DE.UTF-8
     - name: Commit report
       run: |
-        git config --global user.name 'CHesseling'
-        git config --global user.email 'der.hamburger@gmail.com'
+        git config --global user.name 'PhilKret'
+        git config --global user.email 'philip.kretschmer@web.de'
         git add -A
         git commit -am "Automated report"
         git push
