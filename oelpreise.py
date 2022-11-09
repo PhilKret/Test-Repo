@@ -62,10 +62,6 @@ df_resampled = df.resample('M').mean() # monatlichen Durchschnitt berechnen mit 
 df_resampled # unser dataframe ist fertig
 
 
-# In[19]:
-
-
-df_resampled.plot.line()
 
 
 # In[20]:
