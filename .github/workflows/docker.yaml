@@ -14,6 +14,8 @@ jobs:
     name: run
     runs-on: ubuntu-22.04
     timeout-minutes: 5
+    env:
+      MSTEAMS: ${{ secrets.MSTEAMS}}
 
     permissions:
       contents: write
@@ -28,7 +30,7 @@ jobs:
     - run: |
        python -VV
        pip install -r requirements.txt
-       python oelpreise.py
+       python pipeline3.py
     # Available enviroment variables
    #   environment: |
     #     LC_ALL: de_DE.UTF-8
