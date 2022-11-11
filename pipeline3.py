@@ -184,13 +184,6 @@ text = ','.join(new_str)
 text
 
 
-# In[126]:
-
-
-# Über Teams Webhooks schicken
-
-get_ipython().system('pip install pymsteams')
-
 
 # In[132]:
 
